@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Battle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Study Battle Game</h1>
+    <div id="skoins">Skoins: <span id="skoins-count">0</span></div>
+    <div id="level">Level: <span id="player-level">1</span></div>
+    <div id="character">Character: <span id="character-name">Adventurer</span></div>
+  </header>
+
+  <main>
+    <section id="question-section">
+      <p id="question-text">Press "New Question" to start!</p>
+      <input type="text" id="answer-input" placeholder="Enter your answer">
+      <button id="submit-answer">Submit</button>
+      <button id="new-question">New Question</button>
+      <p id="result-message"></p>
+    </section>
+
+    <section id="actions-section">
+      <button id="upgrade-level">Upgrade Level (50 skoins)</button>
+      <button id="open-case">Open Case (100 skoins)</button>
+      <button id="battle">Battle! (30 skoins)</button>
+      <p id="action-message"></p>
+    </section>
+
+    <section id="inventory-section">
+      <h2>Inventory</h2>
+      <ul id="inventory-list"></ul>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
